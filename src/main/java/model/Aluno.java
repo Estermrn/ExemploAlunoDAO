@@ -40,7 +40,7 @@ public class Aluno extends Pessoa {
     }
 
     public ArrayList<Aluno> getMinhaLista() {
-        return AlunoDAO.getMinhaLista();
+        return AlunoDAO.getMinhaListaMemoria();
     }
 
     public boolean insertAlunoBD(String nome, int idade, String curso, int fase) {
@@ -80,6 +80,6 @@ public class Aluno extends Pessoa {
     }
 
     public int maiorID() {
-        return AlunoDAO.maiorID();
+        return AlunoDAO.maiorIDLista();
     }
 }
